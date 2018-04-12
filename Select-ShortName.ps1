@@ -21,7 +21,7 @@ function Select-ShortName {
     }
 
     process {
-        if ($LongName.Length -lt 6) {
+        if ($LongName.Length -gt 6) {
             $ShortName = $LongName.Substring(0, 5)
         }
         else {
